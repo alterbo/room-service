@@ -1,0 +1,8 @@
+.switcher [aria-checked]:focus ,
+.switcher [aria-checked]:focus-within {
+  outline: 2px solid #2e2e2e;
+}
+
+.switcher-indicator {
+  transition: transform 700ms cubic-bezier(.41,.23,.83,.67);
+}
