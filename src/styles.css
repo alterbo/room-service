@@ -1,6 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --flex-basis-1\/7: 14.2857143%;
+  --flex-basis-2\/7: 28.5714286%;
+  --flex-basis-3\/7: 42.8571429%;
+  --flex-basis-4\/7: 57.1428571%;
+  --flex-basis-5\/7: 71.4285714%;
+  --flex-basis-6\/7: 85.7142857%;
+
+  --grid-template-columns-header: minmax(50px, 10svw) 1fr;
+  --grid-template-columns-layout: auto 1fr;
+  --grid-template-rows-layout: auto 1fr;
+
+  --max-width-35: 35px;
+  --max-width-47: 47px;
+  --min-width-47: 47px;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -18,7 +33,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-#root {
+#app {
   width: 100%;
 }
 
@@ -36,7 +51,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 h1 {
@@ -58,7 +73,6 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }

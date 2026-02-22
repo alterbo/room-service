@@ -1,3 +1,3 @@
-# Game
+# Room service
 
-Created in React with tailwind while listening to David Bowie
+Created in Svelte with tailwind while listening to David Bowie
